@@ -1,32 +1,36 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomePageComponent } from 'C:/Users/roder/Desktop/Inmobiliaria/inmobiliaria/src/app/modules/home-page/home-page.component';
-import { SalesPageComponent } from 'C:/Users/roder/Desktop/Inmobiliaria/inmobiliaria/src/app/modules/sales-page/sales-page.component';
-import { ShoppingPageComponent } from 'C:/Users/roder/Desktop/Inmobiliaria/inmobiliaria/src/app/modules/shopping-page/shopping-page.component';
-import { AppraisalsPageComponent } from 'C:/Users/roder/Desktop/Inmobiliaria/inmobiliaria/src/app/modules/appraisals-page/appraisals-page.component';
-import { AuctionsPageComponent } from 'C:/Users/roder/Desktop/Inmobiliaria/inmobiliaria/src/app/modules/auctions-page/auctions-page.component';
-import { RentOwnerPageComponent } from 'C:/Users/roder/Desktop/Inmobiliaria/inmobiliaria/src/app/modules/rent-owner-page/rent-owner-page.component';
-import { RentTenantPageComponent } from 'C:/Users/roder/Desktop/Inmobiliaria/inmobiliaria/src/app/modules/rent-tenant-page/rent-tenant-page.component';
 
 const routes: Routes = [
-  {path: '',
-  children:[
-    {path:'home', component:HomePageComponent},
-    {path:'sales', component:SalesPageComponent},
-    {path:'shopping', component:ShoppingPageComponent},
-    {path:'appraisals', component:AppraisalsPageComponent},
-    {path:'auctions', component:AuctionsPageComponent},
-    {path:'rent-owner', component:RentOwnerPageComponent},
-    {path:'rent-tenant', component:RentTenantPageComponent},
-    {path:'**', redirectTo:"home" }
-  ]
-  }
-];
+    {path:'inicio',
+    loadChildren:() => import('../home/home.module').then(m => m.HomeModule)},
+
+    {path:'ventas',
+    loadChildren:() => import('../sales/sales.module').then(m => m.SalesModule)},
+   
+    {path:'compras',
+    loadChildren:() => import('../shopping/shopping.module').then(m => m.ShoppingModule)},
+
+    {path:'tasaciones',
+    loadChildren:() => import('../appraisals/appraisals.module').then(m => m.AppraisalsModule)},
+    
+    {path:'subastas',
+    loadChildren:() => import('../auctions/auctions.module').then(m => m.AuctionsModule)},
+
+    {path:'propietario-alquila',
+    loadChildren:() => import('../rent-owner/rent-owner.module').then(m => m.RentOwnerModule)},
+
+    {path:'inquilino-alquila',
+    loadChildren:() => import('../rent-tenant/rent-tenant.module').then(m => m.RentTenantModule)},
+
+    {path:'**', redirectTo:"inicio" }
+  ];
 
 @NgModule({
   declarations: [],
   imports: [
     RouterModule.forChild(routes)
-  ]
+  ],
+  exports: [RouterModule]
 })
 export class TemplateRoutingModule { }

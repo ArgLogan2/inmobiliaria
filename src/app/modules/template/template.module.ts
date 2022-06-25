@@ -11,8 +11,8 @@ import { SharedsComponentsModule } from 'src/app/shareds-components/shareds-comp
   ],
   imports: [
     CommonModule,
-    TemplateRoutingModule,
-    SharedsComponentsModule
+    TemplateRoutingModule,  // para acceder al sistema de rutas hijas
+    SharedsComponentsModule // para acceder a componentes fijos en el template
   ]
 })
 export class TemplateModule { }

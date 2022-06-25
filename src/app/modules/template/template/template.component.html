@@ -1,7 +1,8 @@
-<h4>PROBANDO SISTEMA DE RUTAS</h4>
+<!-- se arma cada página con componentes fijos y variables según path -->
 
-<app-header></app-header>
-<ul>
+<app-header></app-header>   <!-- componente fijo -->
+
+<ul>    <!-- atributos para usar en botones y en navbar -->
     <li><a routerLink="/inicio">Inicio</a></li>
     <li><a routerLink="/ventas">Ventas</a></li>
     <li><a routerLink="/compras">Compras</a></li>
@@ -10,6 +11,9 @@
     <li><a routerLink="/propietario-alquila">Dueño Alquila</a></li>
     <li><a routerLink="/inquilino-alquila">Inquilino Alquila</a></li>
 </ul>
-<router-outlet></router-outlet>
-<app-icono-wsp></app-icono-wsp>
-<app-footer></app-footer>
+
+<!-- componentes variables: el contenido específico de cada página ruteado en template module -->
+<router-outlet></router-outlet> 
+
+<app-icono-wsp></app-icono-wsp> <!-- componente fijo -->
+<app-footer></app-footer>   <!-- componente fijo -->

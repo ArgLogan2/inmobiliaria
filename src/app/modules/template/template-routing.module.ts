@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [
+const routes: Routes = [  // sistema de rutas hijas para cambiar vistas en el template
     {path:'inicio',
     loadChildren:() => import('../home/home.module').then(m => m.HomeModule)},
 
@@ -29,8 +29,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [],
   imports: [
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes)  // importante colocar que son rutas hijas
   ],
-  exports: [RouterModule]
+  exports: [RouterModule]  // importante exportar el sistema de rutas para otros módulos
 })
 export class TemplateRoutingModule { }

@@ -15,7 +15,7 @@ import { IconoWspComponent } from './icono-wsp/icono-wsp.component';
   imports: [
     CommonModule
   ],
-  exports: [
+  exports: [    // importante exportar los componentes para que puedan usarse desde otros módulos
     FooterComponent,
     HeaderComponent,
     IconoWspComponent

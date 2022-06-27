@@ -1,0 +1,55 @@
+.navigation{
+    font-size: 2rem;
+}
+
+.nav-item{
+    margin-right: 0.5rem;
+}
+
+.num{ 
+  font-size: 1.3rem;
+  margin: 0;
+  margin-left: 1rem;
+  color: white;
+}
+
+
+
+button {
+    font-size: 1.7rem;
+    color: black;
+    font-family: 'Roboto', sans-serif;    
+    cursor: pointer;
+    position: relative;
+    margin-right: 1rem;
+    border: none;
+    background: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  button:focus,
+  button:hover {
+    color: red;
+  }
+  
+  button:focus:after,
+  button:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }

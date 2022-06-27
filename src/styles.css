@@ -3,3 +3,8 @@ html{
 	font-size:62.5%;          /*Hacemos que 1rem sea equivalente a 10px*/
 
 }
+
+.nav-logo{
+    width: 19rem;
+    height: 6rem;
+}

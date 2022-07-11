@@ -6,5 +6,10 @@ html{
 
 .nav-logo{
     width: 19rem;
-    height: 6rem;
+    height: 9rem;
+}
+
+.footer-logo{
+    width: 20rem;
+    height: 17rem;
 }

@@ -13,6 +13,10 @@
   color: white;
 }
 
+.navbar{
+  margin-top: 3rem;
+}
+
 
 
 button {
@@ -31,7 +35,7 @@ button {
   
   button:focus,
   button:hover {
-    color: red;
+    color: #2A56C9;
   }
   
   button:focus:after,
@@ -48,7 +52,7 @@ button {
     position: absolute;
     width: 0%;
     height: 2px;
-    background-color: red;
+    background-color: #2A56C9;
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: width, left;

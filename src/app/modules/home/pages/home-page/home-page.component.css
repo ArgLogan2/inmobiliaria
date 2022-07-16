@@ -28,13 +28,15 @@
 }
 
 .overlay{
+    display: flex;
     z-index: 1;
     position: absolute;
     margin-top: -40em;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    margin-left: 10%;
 }
+
 
 .btn-home{
     background-color: rgb(42,86,201);

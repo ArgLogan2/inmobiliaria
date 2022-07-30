@@ -4,14 +4,20 @@ html{
 
 }
 
-.nav-logo{
-    width: 19rem;
-    height: 9rem;
+.foot2-logo{
+    width: 22rem;
+    height: 8rem;
 }
 
 .footer-logo{
     width: 20rem;
     height: 17rem;
+}
+
+.nav-logo{
+    margin-left: 10rem;
+    width: 28rem;
+    height: 10rem;
 }
 
 .accent-color{

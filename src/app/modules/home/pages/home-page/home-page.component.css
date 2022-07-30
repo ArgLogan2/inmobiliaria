@@ -27,6 +27,16 @@
     overflow: hidden;               /* cuando haces el zoom, no expande el div, recorta la imagen */
 }
 
+.homeImgConteiner h1 {
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*botones de imagen*/
+
 .overlay{
     display: flex;
     z-index: 1;
@@ -38,19 +48,38 @@
 }
 
 
-.btn-home{
+.btn-home { 
     background-color: rgb(42,86,201);
     color: rgb(213,169,54);
-    border-radius: 5px;
     padding: 2% 3%;
     font-size: 200%;
     border: 0px;
     margin: 5%;
     font-size:large;
+    font-weight: bold;
+    transition: transform 0.3s ease;    /*animación*/
+    animation: pulse 2s infinite;
 }
 
-.section{
-    margin: 2rem;
+.btn-home:hover {
+    transform: translate(-8px, -8px);
+}
+
+/*trayectoria - experiencia - respaldo*/
+
+.card {
+    margin: 90px 0;
+    text-align: center;
+    border: none;
+}
+
+.card h1 { font-size: 3em; }
+
+.card p { font-size: 15px; }
+
+.card img {
+    width: 200px;
+    margin: 0 11em;
 }
 
 .text-header{

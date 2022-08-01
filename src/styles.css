@@ -1,7 +1,24 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;   /* proporción de 1rem = 10px */
+  font-family: 'Roboto', sans-serif;    /* se define este estilo de fuente para la página*/
+}
 
-html{
-	font-size:62.5%;          /*Hacemos que 1rem sea equivalente a 10px*/
-
+/* variables globales */
+:root {
+    /* Sistema de Colores */
+    --color-negative: #2A56C9;
+    --color-logo: rgb(213,169,54);
+    --color-txt-btn: white;
+    --color-info-sub:rgb(84, 79, 79); 
+    --color-light-background: white;
+    --color-dark-background: black;
+    --color-shade: rgb(0 0 0 / 50%);
 }
 
 .foot2-logo{
@@ -21,5 +38,9 @@ html{
 }
 
 .accent-color{
-    color: #2A56C9;
+    color:var(--color-negative);
+}
+
+.mr2{
+    margin-right: .2rem;
 }

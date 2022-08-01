@@ -4,3 +4,7 @@
     font-family: 'Roboto', sans-serif;   
     margin-left: 2rem;
 }
+
+.bg-footer{
+    background-color: var(--color-dark-background);
+}

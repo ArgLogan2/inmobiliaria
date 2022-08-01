@@ -10,7 +10,11 @@
   font-size: 1.3rem;
   margin: 0;
   margin-left: 1rem;
-  color: var(--color-light-background);
+  color: var(--color-txt-btn);
+}
+
+.bg-header{
+  background-color: var(--color-dark-background);
 }
 
 .navbar{

@@ -15,9 +15,9 @@ html {
     --color-negative: #2A56C9;
     --color-logo: rgb(213,169,54);
     --color-txt-btn: white;
-    --color-info-sub:rgb(84, 79, 79); 
+    --color-info-sub:rgb(84, 79, 79);
     --color-light-background: white;
-    --color-dark-background: black;
+    --color-dark-background: rgb(50, 50, 50);
     --color-shade: rgb(0 0 0 / 50%);
 }
 

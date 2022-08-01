@@ -48,7 +48,7 @@
 
 .overlay-txt{
     display: flex;
-    color: var(--color-light-background);
+    color: var(--color-txt-btn);
     z-index: 1;
     font-size:700%;
     position: absolute;

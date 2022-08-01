@@ -60,7 +60,7 @@
 
 .btn-home { 
     background-color: var(--color-negative);
-    color: var(--color-light-background);
+    color: var(--color-txt-btn);
     padding: 2% 3%;
     font-size: 200%;
     border: 0px;

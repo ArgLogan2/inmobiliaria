@@ -7,13 +7,13 @@ button {
     background-color: #00bb2d;
     border: 1px solid #00bb2d;
     border-radius: 50%;
-    padding: 0 15px;
+    padding: 0 1.5rem;
     cursor: pointer;
     height: 6rem;
     width: 6rem;
     font-size: 3rem;
     transition: all 0.2s ease-in-out;
-    box-shadow: 0 0 30px rgb(98 49 49 / 44%);
+    box-shadow: 0 0 3rem rgb(98 49 49 / 44%);
   }
   button:hover {
     transform: scale(1.1);

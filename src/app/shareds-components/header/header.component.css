@@ -10,19 +10,21 @@
   font-size: 1.3rem;
   margin: 0;
   margin-left: 1rem;
-  color: white;
+  color: var(--color-txt-btn);
+}
+
+.bg-header{
+  background-color: var(--color-dark-background);
 }
 
 .navbar{
   margin-top: 3rem;
+  box-shadow: 0rem 0rem 1rem 0rem var(--color-shade);
 }
-
-
 
 button {
     font-size: 1.7rem;
-    color: black;
-    font-family: 'Roboto', sans-serif;    
+    color: var(--color-dark-background);
     cursor: pointer;
     position: relative;
     margin-right: 1rem;
@@ -35,7 +37,7 @@ button {
   
   button:focus,
   button:hover {
-    color: #2A56C9;
+    color: var(--color-negative);
   }
   
   button:focus:after,
@@ -47,12 +49,12 @@ button {
   button:after {
     content: "";
     pointer-events: none;
-    bottom: -2px;
+    bottom: -.2rem;
     left: 50%;
     position: absolute;
     width: 0%;
-    height: 2px;
-    background-color: #2A56C9;
+    height: .2rem;
+    background-color: var(--color-negative);
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: width, left;

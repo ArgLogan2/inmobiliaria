@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  public pathImg:string = "./src/images/goalkeeper-F100031461.jpg";
   constructor() { }
 
   ngOnInit(): void {

@@ -1,36 +1,50 @@
 <div>
-    <div class="homeImgConteiner">
-        <!-- con el ngStyle voy cambiando la imagen de fondo del div -->
-        <div class="home-img" [ngStyle]="{'background-image': 'url(' + image + ')'}">
-
-
+  <div class="homeImgConteiner">
+      <!-- con el ngStyle voy cambiando la imagen de fondo del div -->
+      <div class="home-img opacity-img" [ngStyle]="{'background-image': 'url(' + image + ')'}"></div>
+  </div>
+        
+<!-- <li><a routerLink="/inicio">Inicio</a></li>
+    <li><a routerLink="/ventas">Ventas</a></li>
+    <li><a routerLink="/compras">Compras</a></li>
+    <li><a routerLink="/tasaciones">Tasaciones</a></li>
+    <li><a routerLink="/subastas">Subastas</a></li>
+    <li><a routerLink="/propietario-alquila">Dueño Alquila</a></li>
+    <li><a routerLink="/inquilino-alquila">Inquilino Alquila</a></li> -->
+  <h1 class="overlay-txt">¡Tenemos lo que buscás!</h1>
+  <div class="overlay">
+    <button name="btn1" class="btn-home" routerLink="/compras">QUIERO COMPRAR</button>
+    <button name="btn1" class="btn-home" routerLink="/ventas">QUIERO VENDER</button>
+    <button name="btn1" class="btn-home" routerLink="/inquilino-alquila">BUSCO ALQUILER</button>
+    <button name="btn1" class="btn-home" routerLink="/propietario-alquila">PUBLICO ALQUILER</button>
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="../../../../../assets/img/MEDIOS DE COMUNICACIONES AZUL.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">Experiencia</h1>
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum atque omnis molestias commodi, deleniti, veritatis inventore optio nisi voluptatum alias dignissimos nostrum quae unde accusamus recusandae in tempore aperiam enim neque explicabo officia sit? Enim beatae commodi amet magnam quo minus laborum nisi autem!</p>
         </div>
+      </div>
     </div>
-    <div class="overlay">
-        <button name="btn1" class="btn-home">Bontón -></button>
-        <button name="btn1" class="btn-home">Bontón -></button>
-        <button name="btn1" class="btn-home">Bontón -></button>
-        <button name="btn1" class="btn-home">Bontón -></button>
+    <div class="col">
+      <div class="card">
+        <img src="../../../../../assets/img/certificado-AZUL.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">Trayectoria</h1>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus possimus numquam labore, cumque id dolore officia quasi beatae quos dolorem molestias iusto atque! Velit reiciendis eius voluptates unde possimus inventore.</p>
+        </div>
+      </div>
     </div>
-    <div class="container">
-        <div class="section">
-            <div class=" d-flex row row-content align-items-center justify-content-center">
-                <div class="col-sm-3">
-                    <img src="../../../../../assets/img/medios-de-comunicacion-social-150x150.png">
-                    <h1 class="text-header">Experiencia</h1>
-                    <p class="home-text">Aca va el texto desde le json para la experiencia</p>
-                </div>
-                <div class="col-sm-3">
-                    <img src="../../../../../assets/img/certificado-150x150.png">
-                    <h1 class="text-header">Trayectoria</h1>
-                    <p class="home-text">Aca va el texto desde le json para la trayectoria</p>
-                </div>
-                <div class="col-sm-3 align-items-center">
-                    <img src="../../../../../assets/img/objetivo-150x150.png">
-                    <h1 class="text-header">Respaldo</h1>
-                    <p class="home-text">Aca va el texto desde le json para el Respaldo</p>
-                </div>
-            </div>
-        </div>  
+    <div class="col">
+      <div class="card">
+        <img src="../../../../../assets/img/PICTOGRAMA DE MANOS AZULES.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">Respaldo</h1>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem at voluptas optio molestiae repudiandae natus laboriosam, distinctio sint quia ad commodi quibusdam sit perspiciatis ipsum est modi ut voluptates! Obcaecati ex soluta deleniti eos perspiciatis, delectus quibusdam sequi eveniet ad sit id eligendi ducimus dolorem explicabo, quaerat iste cupiditate inventore..</p>
+        </div>
+      </div>
     </div>
+  </div>
 </div>

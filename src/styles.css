@@ -1,12 +1,43 @@
-
-html{
-	font-size:62.5%;          /*Hacemos que 1rem sea equivalente a 10px*/
-
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;   /* proporción de 1rem = 10px */
+  font-family: 'Roboto', sans-serif;    /* se define este estilo de fuente para la página*/
 }
 
-.nav-logo{
-    width: 19rem;
-    height: 9rem;
+/* variables globales */
+:root {
+    /* Sistema de Colores */
+    --color-negative: #2A56C9;
+    --color-logo: rgb(213,169,54);
+    --color-txt-btn: white;
+    --color-info-sub:rgb(84, 79, 79);
+    --color-light-background: white;
+    --color-dark-background: rgb(50, 50, 50);
+    --color-shade: rgb(0 0 0 / 50%);
+}
+
+/* clases genéricas */
+
+/* clase para establecer filtro de opacidad en imagenes */
+
+.opacity-img::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.foot2-logo{
+    width: 22rem;
+    height: 8rem;
 }
 
 .footer-logo{
@@ -14,6 +45,16 @@ html{
     height: 17rem;
 }
 
+.nav-logo{
+    margin-left: 1.5rem;
+    width: 28rem;
+    height: 10.5rem;
+}
+
 .accent-color{
-    color: #2A56C9;
+    color:var(--color-negative);
+}
+
+.mr2{
+    margin-right: .2rem;
 }

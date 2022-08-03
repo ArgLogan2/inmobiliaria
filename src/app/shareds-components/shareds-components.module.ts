@@ -5,6 +5,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { IconoWspComponent } from './icono-wsp/icono-wsp.component';
 import { Footer2Component } from './footer/footer2/footer2.component';
+import { TemplateRoutingModule } from '../modules/template/template-routing.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { Footer2Component } from './footer/footer2/footer2.component';
     Footer2Component
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    TemplateRoutingModule
   ],
   exports: [    // importante exportar los componentes para que puedan usarse desde otros módulos
     FooterComponent,

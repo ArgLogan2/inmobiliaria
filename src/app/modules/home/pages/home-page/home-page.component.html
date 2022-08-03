@@ -3,12 +3,20 @@
       <!-- con el ngStyle voy cambiando la imagen de fondo del div -->
       <div class="home-img opacity-img" [ngStyle]="{'background-image': 'url(' + image + ')'}"></div>
   </div>
+        
+<!-- <li><a routerLink="/inicio">Inicio</a></li>
+    <li><a routerLink="/ventas">Ventas</a></li>
+    <li><a routerLink="/compras">Compras</a></li>
+    <li><a routerLink="/tasaciones">Tasaciones</a></li>
+    <li><a routerLink="/subastas">Subastas</a></li>
+    <li><a routerLink="/propietario-alquila">Dueño Alquila</a></li>
+    <li><a routerLink="/inquilino-alquila">Inquilino Alquila</a></li> -->
   <h1 class="overlay-txt">¡Tenemos lo que buscás!</h1>
   <div class="overlay">
-    <button name="btn1" class="btn-home">QUIERO COMPRAR</button>
-    <button name="btn1" class="btn-home">QUIERO VENDER</button>
-    <button name="btn1" class="btn-home">BUSCO ALQUILER</button>
-    <button name="btn1" class="btn-home">PUBLICO ALQUILER</button>
+    <button name="btn1" class="btn-home" routerLink="/compras">QUIERO COMPRAR</button>
+    <button name="btn1" class="btn-home" routerLink="/ventas">QUIERO VENDER</button>
+    <button name="btn1" class="btn-home" routerLink="/inquilino-alquila">BUSCO ALQUILER</button>
+    <button name="btn1" class="btn-home" routerLink="/propietario-alquila">PUBLICO ALQUILER</button>
   </div>
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
@@ -40,7 +48,3 @@
     </div>
   </div>
 </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 8928d854e1fe73d4b829c9e6bbc255023e30e545

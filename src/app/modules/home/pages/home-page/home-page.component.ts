@@ -9,7 +9,7 @@ export class HomePageComponent implements OnInit {
 
 
   path: string = "../../../../../assets/img/";
-  imgList = ['aerosilla.jpg','cerro_la_cruz.jpg','gente_rio.jpg','reloj_cucu.jpg','aerosilla2.png','hidropedales.jpg','tirolesa.jpeg','villa-carlos-paz.jpg','hidropedales2.jpg','vista-de-la-ciudad-de-villa-carlos-paz-y-lago-san-roque.jpg'];
+  imgList = ['LaFalda.jpg','VillaGiardino2.jpg','VillaGiardino1.jpg','LaFalda2.jpg','LaCumbre.jpg','LosCocos.jpg','CapillaDelMonte.jpg','CerroUritorco.jpg','CarlosPaz.jpg','cosquin1.jpg','cerro_la_cruz.jpg','vista-de-la-ciudad-de-villa-carlos-paz-y-lago-san-roque.jpg'];
   index: number = 0;
   image: string = "";
   constructor() { }

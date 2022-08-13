@@ -39,6 +39,7 @@
 
 .overlay{
     display: flex;
+    flex-wrap: wrap;
     z-index: 1;
     position: absolute;
     margin-top: -35rem;

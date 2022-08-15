@@ -1,0 +1,20 @@
+/*trayectoria - experiencia - respaldo*/
+
+.card {
+    margin: 15rem 4rem;
+    /*text-align: center;*/
+    border: none;
+}
+
+.card h1 { font-size: 3rem; }
+
+.card p { font-size: 1.5rem; color:var(--color-info-sub) }
+
+.card img {
+    width: 10rem;
+    margin: 0 1rem;
+}
+
+.home-text{
+    font-size: large;
+}

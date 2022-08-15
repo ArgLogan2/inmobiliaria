@@ -1,0 +1,76 @@
+.home-img{
+    width: 100%;                            /* la img ocupa el ancho del contenedor */
+    height: 100%;                           /* la img ocupa el alto del contenedor */
+    /* background-image: url('../../../../../assets/img/vista-de-la-ciudad-de-villa-carlos-paz-y-lago-san-roque.jpg'); */
+    background-position: center;
+    background-size: cover;                 /* estira la imagen para ocupar todo el contenedor */
+    animation-name: zoomIn;                 /* nombre del key frame que hace la animación */
+    animation-duration: 5s;                 /* tengo que aclarar esto? */
+    animation-iteration-count: infinite;    /* cuantas veces hago la animación */
+    background-color: var(--color-info-sub);
+}
+
+ 
+@keyframes zoomIn{
+    0% {
+        transform: scale(1);        /*tamaño original de la imagen*/ 
+    }
+    100% {
+        /* transition:2s; */
+        transform:scale(1.1);       /*tamaño final de la imagen*/
+    }
+}
+
+.homeImgConteiner{
+    width: 100%;                    /* tamaño del contenedor de la imagen. Basicamente el tamaño en que se ve en la pagina.*/
+    height: 70rem;                   /* el zoom se realiza dentro de este marco*/
+    overflow: hidden;               /* cuando haces el zoom, no expande el div, recorta la imagen */
+}
+
+.homeImgConteiner h1 {
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*botones de imagen*/
+
+.overlay{
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    margin-top: -35rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.overlay-txt{
+    display: flex;
+    color: var(--color-txt-btn);
+    z-index: 1;
+    font-size:700%;
+    position: absolute;
+    margin-top: -45rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-home { 
+    background-color: var(--color-negative);
+    color: var(--color-txt-btn);
+    padding: 2% 3%;
+    font-size: 200%;
+    border: 0px;
+    margin: 2%;
+    font-size:large;
+    transition: transform 0.3s ease;    /*animación*/
+    animation: pulse 2s infinite;
+}
+
+.btn-home:hover {
+    transform: translate(-.8rem, -.8rem);
+}

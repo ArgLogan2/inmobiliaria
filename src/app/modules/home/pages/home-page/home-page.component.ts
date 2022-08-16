@@ -9,7 +9,7 @@ import { Inmobiliaria } from '../../models/home';
 })
 export class HomePageComponent implements OnInit {
 
-  
+  public inmobiliaria : Inmobiliaria[] = []; 
   path: string = "../../../../../assets/img/";
   imgList = ['LaFalda.jpg','VillaGiardino2.jpg','VillaGiardino1.jpg','LaFalda2.jpg','LaCumbre.jpg','LosCocos.jpg','CapillaDelMonte.jpg','CerroUritorco.jpg','CarlosPaz.jpg','cosquin1.jpg','cerro_la_cruz.jpg','vista-de-la-ciudad-de-villa-carlos-paz-y-lago-san-roque.jpg'];
   index: number = 0;
@@ -32,7 +32,8 @@ export class HomePageComponent implements OnInit {
   getsInmobiliaria(){
     this.homeService.getsInmobiliaria()
     .subscribe((inmobiliaria:Inmobiliaria[]) => {
-      console.log(inmobiliaria);
+      this.inmobiliaria = inmobiliaria; 
+      console.log(this.inmobiliaria);
     })
   }
 

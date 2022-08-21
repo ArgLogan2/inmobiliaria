@@ -6,11 +6,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 56281a01a10dcee09dd1abde4e2c8774f97925f7
 @NgModule({
   declarations: [
     AppComponent

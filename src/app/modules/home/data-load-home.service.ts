@@ -20,10 +20,9 @@ export class DataLoadHomeService {
   constructor(private httpClient:HttpClient) { }
 
   
-
   /*método res, para traer la data correspondiente a inmobiliaria*/ 
   getsInmobiliaria():Observable<Inmobiliaria[]>{
-    
+  
     /*
       consultamos si dataLocal no esta vacía, en caso de ser así quiere decir que ya se cargaron los datos que vienen desde la api, con lo cual no es necesario volver hacer una consulta a la misma sino que retornamos los datos que se encuentran en dataLocal. 
     */

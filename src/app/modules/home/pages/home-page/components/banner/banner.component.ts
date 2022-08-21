@@ -15,7 +15,6 @@ export class BannerComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
     setInterval(() =>{
       this.image = this.path + this.imgList[this.index];
       // console.log(this.image);

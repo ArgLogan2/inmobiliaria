@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit } from '@angular/core';
 import { DataLoadHomeService } from '../../data-load-home.service';
-import { Inmobiliaria } from '../../models/home';
+import { Banner, Home } from '../../models/home';
 
 @Component({
   selector: 'app-home-page',
@@ -8,32 +8,41 @@ import { Inmobiliaria } from '../../models/home';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
+  
+  
+  banner:Banner = {titleBanner: '', urlImgBanner: []};
 
-  public inmobiliaria : Inmobiliaria[] = []; 
-  path: string = "../../../../../assets/img/";
-  imgList = ['LaFalda.jpg','VillaGiardino2.jpg','VillaGiardino1.jpg','LaFalda2.jpg','LaCumbre.jpg','LosCocos.jpg','CapillaDelMonte.jpg','CerroUritorco.jpg','CarlosPaz.jpg','cosquin1.jpg','cerro_la_cruz.jpg','vista-de-la-ciudad-de-villa-carlos-paz-y-lago-san-roque.jpg'];
-  index: number = 0;
-  image: string = "";
-  constructor(private homeService:DataLoadHomeService) { }
-
+  // path: string = "../../../../../assets/img/";
+  // imgList = ['LaFalda.jpg','VillaGiardino2.jpg','VillaGiardino1.jpg','LaFalda2.jpg','LaCumbre.jpg','LosCocos.jpg','CapillaDelMonte.jpg','CerroUritorco.jpg','CarlosPaz.jpg','cosquin1.jpg','cerro_la_cruz.jpg','vista-de-la-ciudad-de-villa-carlos-paz-y-lago-san-roque.jpg'];
+  // index: number = 0;
+  // image: string = "";
+  constructor(private homeService:DataLoadHomeService) { 
+    
+  }
+  
   ngOnInit(): void {
+    // this.about = "Funciona desde ngOnInit";
 
-    setInterval(() =>{
-      this.image = this.path + this.imgList[this.index];
-      // console.log(this.image); 
-      this.index++;
-      if (this.index == this.imgList.length){this.index =0;}
-    }, 5000);
-
-    this.getsInmobiliaria();
+    // setInterval(() =>{
+    //   this.image = this.path + this.imgList[this.index];
+    //   // console.log(this.image); 
+    //   this.index++;
+    //   if (this.index == this.imgList.length){this.index =0;}
+    // }, 5000);
+    this.getHome();
+    
 
   }
 
-  getsInmobiliaria(){
-    this.homeService.getsInmobiliaria()
-    .subscribe((inmobiliaria:Inmobiliaria[]) => {
-      this.inmobiliaria = inmobiliaria; 
-      console.log(this.inmobiliaria);
+  getHome(){
+    this.homeService.getHome()
+    .subscribe((home:Home[]) => {
+   
+      
+      this.banner.titleBanner = home[0].titleBanner;
+      this.banner.urlImgBanner = home[0].urlImgBanner;
+      
+     
     })
   }
 

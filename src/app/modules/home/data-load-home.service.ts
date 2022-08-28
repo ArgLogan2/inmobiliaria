@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 /*importo la variable de entorno de desarrollo, allí se encuentra la ruta del json que contiene la data de la página home*/ 
 import { environment } from 'src/environments/environment';
 import { map } from 'rxjs';
-import { Inmobiliaria } from './models/home';
+import { Inmobiliaria, Home } from './models/home';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -35,15 +35,30 @@ export class DataLoadHomeService {
     
 
     // realicé este bloque al código para simular una petición a la api. 
-    let i = 5000000000; 
-    while(i > 0 ) {
-        i--; 
-        if(i == 1) {console.log("petición a la api")}
-    }
+    // let i = 5000000000; 
+    // while(i > 0 ) {
+    //     i--; 
+    //     if(i == 1) {console.log("petición a la api")}
+    // }
     /*
       hace una petición a la api, guardamos la data en la variable dataLocal y a la vez retornamos cómo respuesta lo que viene desde la api. 
     */
     return this.httpClient.get(`${this.urlApi}/inmobiliaria.json`).pipe(map( inmobiliaria => this.dataLocal = inmobiliaria as Inmobiliaria[]));
     
    }
+
+   getHome():Observable<Home[]>{
+    
+      return this.httpClient.get<Inmobiliaria[]>(`${this.urlApi}/inmobiliaria.json`).pipe(map( (inmobiliaria) => {
+        return inmobiliaria.map(inmobiliaria =>{
+         return {
+          id: inmobiliaria.id,
+          urlImgBanner: inmobiliaria.urlImgBanner,
+          titleBanner: inmobiliaria.titleBanner,
+          about: inmobiliaria.about
+         }
+        })
+      }));
+   }
+
 }

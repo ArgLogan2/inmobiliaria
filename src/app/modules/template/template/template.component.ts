@@ -13,7 +13,7 @@ export class TemplateComponent implements OnInit {
   constructor(private homeService:DataLoadHomeService) { }
 
   ngOnInit(): void {
-    this.getsInmobiliaria(); 
+    // this.getsInmobiliaria(); 
   }
 
   getsInmobiliaria() {

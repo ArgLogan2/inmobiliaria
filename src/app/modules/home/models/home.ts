@@ -6,9 +6,6 @@ export interface Inmobiliaria {
     email : string,
     contactTime: string,
     logo : string[],
-    urlImgBanner : string[],
-    titleBanner : string,
-    about : About[]
 }
 
 export interface Home {
@@ -18,12 +15,7 @@ export interface Home {
     about : About[]
 }
 
-export interface Banner {
-    titleBanner : string, 
-    urlImgBanner : string[]
-}
-
-export interface About {
+interface About {
     urlImg : string
     tite : string,
     description: string,

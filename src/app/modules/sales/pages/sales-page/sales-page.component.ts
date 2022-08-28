@@ -1,3 +1,5 @@
+// Leonardo es el responsable del desarrollo del front-end dinámico de sales.
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({

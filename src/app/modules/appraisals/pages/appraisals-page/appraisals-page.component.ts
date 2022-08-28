@@ -1,3 +1,4 @@
+/* "Romina es la responsable del desarrollo del front-end dinámico de appraisals. */
 import { Component, OnInit } from '@angular/core';
 
 @Component({

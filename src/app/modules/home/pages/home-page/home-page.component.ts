@@ -1,6 +1,6 @@
 import {Component, OnInit } from '@angular/core';
 import { DataLoadHomeService } from '../../data-load-home.service';
-import { Home } from '../../models/home';
+import { Home, About } from '../../models/home';
 
 @Component({
   selector: 'app-home-page',
@@ -10,7 +10,7 @@ import { Home } from '../../models/home';
 export class HomePageComponent implements OnInit {
   
   
-  // banner:Banner = {titleBanner: '', urlImgBanner: []};
+  home:Home = {titleBanner: '', urlImgBanner: [], about: []};
 
   // path: string = "../../../../../assets/img/";
   // imgList = ['LaFalda.jpg','VillaGiardino2.jpg','VillaGiardino1.jpg','LaFalda2.jpg','LaCumbre.jpg','LosCocos.jpg','CapillaDelMonte.jpg','CerroUritorco.jpg','CarlosPaz.jpg','cosquin1.jpg','cerro_la_cruz.jpg','vista-de-la-ciudad-de-villa-carlos-paz-y-lago-san-roque.jpg'];
@@ -37,6 +37,11 @@ export class HomePageComponent implements OnInit {
   getHome(){
     this.homeService.getHome()
     .subscribe((home:Home[]) => {
+      this.home.id = home[0].id;
+      this.home.titleBanner = home[0].titleBanner;
+      this.home.urlImgBanner = home[0].urlImgBanner;
+      this.home.about = home[0].about;
+      
       console.log("salida desde home page", home);
     })
   }

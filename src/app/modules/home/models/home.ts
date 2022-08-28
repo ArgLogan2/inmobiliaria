@@ -15,7 +15,9 @@ export interface Home {
     about : About[]
 }
 
-interface About {
+
+
+export interface About {
     urlImg : string
     tite : string,
     description: string,

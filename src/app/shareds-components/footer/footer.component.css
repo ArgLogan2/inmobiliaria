@@ -34,6 +34,19 @@
 
 }
 
+@media (max-width: 470px) {
+    #logo-footer{
+        width: 15rem;
+        height: 13rem;
+    }
+}
+
+@media(max-width:300px){
+   #text-footer{
+    font-size: 1.2rem;
+   } 
+}
+
 
 
 .container-pre-footer{

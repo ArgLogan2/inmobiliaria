@@ -1,25 +1,20 @@
 
 
-export interface Inmobiliaria {
-    id? : Number;
-    phone : string,
-    email : string,
-    contactTime: string,
-    logo : string[],
-}
-
 export interface Home {
     id?: Number; 
-    urlImgBanner : string[],
     titleBanner : string,
+    urlImgBanner : string[],
     about : About[]
 }
 
-
+export interface Banner {
+    titleBanner : string,
+    urlImgBanner : string[],
+}
 
 export interface About {
     urlImg : string
-    tite : string,
+    title : string,
     description: string,
 }
 

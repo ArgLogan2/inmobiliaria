@@ -1,7 +1,7 @@
 [ 
     {
         "id" : 1,
-        "tel" : "3804-99999",
+        "phone" : "3804-99999",
         "email" : "inmobiliariafrancolujan@gmail.com",
         "contactTime": "08:00 a 17:00",
         "logo" : ["../assets/img/Monograma fl  dorado horizontalRecurso 3.png", "../assets/img/Monograma fl vertical - bnRecurso 2.png", "../assets/img/Monograma fl horizontal - bnRecurso 2.png"]

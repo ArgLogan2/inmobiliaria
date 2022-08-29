@@ -1,7 +1,7 @@
 <!-- se arma cada página con componentes fijos y variables según path -->
 
 
-<app-header></app-header>   
+<app-header [inmobiliaria]=inmobiliaria></app-header>   
 <!-- componente fijo -->
 
 <ul>    <!-- atributos para usar en botones y en navbar -->
@@ -31,5 +31,5 @@
 <!-- componentes variables: el contenido específico de cada página ruteado en template module -->
 <router-outlet></router-outlet> 
 
-<app-icono-wsp></app-icono-wsp> <!-- componente fijo -->
-<app-footer></app-footer>   <!-- componente fijo -->
+<app-icono-wsp [inmobiliaria]=inmobiliaria></app-icono-wsp> <!-- componente fijo -->
+<app-footer [inmobiliaria]=inmobiliaria></app-footer>   <!-- componente fijo -->

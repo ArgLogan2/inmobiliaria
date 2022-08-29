@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Home } from 'src/app/modules/home/models/home';
+import { About, Home } from 'src/app/modules/home/models/home';
 
 @Component({
   selector: 'app-about',
@@ -9,7 +9,7 @@ import { Home } from 'src/app/modules/home/models/home';
 export class AboutComponent implements OnInit{
   
  
-  @Input () about:Home = {titleBanner: '', urlImgBanner: [], about: []};
+  @Input ()  about:About[] = [];
   constructor() {
   }
   

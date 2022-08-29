@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Inmobiliaria } from 'src/app/modules/template/models/template';
 
 
 @Component({
@@ -8,17 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   
-  
-  
-  constructor() { 
-
-  }
+  @Input() inmobiliaria : Inmobiliaria[] = []; 
+  constructor() {}
 
   ngOnInit(): void {
-   
+    console.log("salida desde header.component", this.inmobiliaria);
   }
-
- 
-
 
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DataLoadHomeService } from '../../home/data-load-home.service';
-import { Inmobiliaria } from '../../home/models/home';
+import { DataLoadTemplateService } from '../data-load-template.service';
+import { Inmobiliaria } from '../models/template';
 
 @Component({
   selector: 'app-template',
@@ -9,19 +9,19 @@ import { Inmobiliaria } from '../../home/models/home';
 })
 export class TemplateComponent implements OnInit {
 
-  inmobiliaria : Inmobiliaria[] = []; 
-  constructor(private homeService:DataLoadHomeService) { }
+  inmobiliaria : Inmobiliaria[] = [];
+  constructor(private templateService:DataLoadTemplateService) { }
 
   ngOnInit(): void {
-    // this.getsInmobiliaria(); 
+    this.getsInmobiliaria(); 
   }
 
   getsInmobiliaria() {
     
-    this.homeService.getsInmobiliaria()
+    this.templateService.getsInmobiliaria()
     .subscribe((inmobiliaria:Inmobiliaria[]) => {
-      this.inmobiliaria = inmobiliaria; 
-      console.log(this.inmobiliaria, "datos desde el template");
+      this.inmobiliaria.push(inmobiliaria[0]);
+    
     })
   }
 }

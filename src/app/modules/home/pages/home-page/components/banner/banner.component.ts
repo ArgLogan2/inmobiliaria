@@ -1,5 +1,5 @@
 import {Component, Input, OnInit } from '@angular/core';
-import { Home } from 'src/app/modules/home/models/home';
+import { Banner } from 'src/app/modules/home/models/home';
 
 @Component({
   selector: 'app-banner',
@@ -8,7 +8,7 @@ import { Home } from 'src/app/modules/home/models/home';
 })
 export class BannerComponent implements OnInit {
 
-  @Input () banner:Home= {titleBanner: '', urlImgBanner: [], about: []};
+  @Input () banner:Banner = {titleBanner: '', urlImgBanner: []}
 
   path: string = "../../../../../assets/img/";
   imgList = ['LaFalda.jpg','VillaGiardino2.jpg','VillaGiardino1.jpg','LaFalda2.jpg','LaCumbre.jpg','LosCocos.jpg','CapillaDelMonte.jpg','CerroUritorco.jpg','CarlosPaz.jpg','cosquin1.jpg','cerro_la_cruz.jpg','vista-de-la-ciudad-de-villa-carlos-paz-y-lago-san-roque.jpg'];

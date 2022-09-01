@@ -7,6 +7,7 @@ import { BannerComponent } from './pages/home-page/components/banner/banner.comp
 import { AboutComponent } from './pages/home-page/components/about/about.component';
 
 
+
 @NgModule({
   declarations: [
     HomePageComponent,

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataLoadTemplateService } from '../data-load-template.service';
+import { Inmobiliaria } from '../models/template';
 
 @Component({
   selector: 'app-template',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TemplateComponent implements OnInit {
 
-  constructor() { }
+  inmobiliaria : Inmobiliaria[] = [];
+  constructor(private templateService:DataLoadTemplateService) { }
 
   ngOnInit(): void {
+    this.getsInmobiliaria(); 
   }
 
+  getsInmobiliaria() {
+    
+    this.templateService.getsInmobiliaria()
+    .subscribe((inmobiliaria:Inmobiliaria[]) => {
+      this.inmobiliaria.push(inmobiliaria[0]);
+    
+    })
+  }
 }

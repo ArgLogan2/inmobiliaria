@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "urlImgBanner" : ["LaFalda.jpg","VillaGiardino2.jpg","VillaGiardino1.jpg","LaFalda2.jpg","LaCumbre.jpg","LosCocos.jpg","CapillaDelMonte.jpg","CerroUritorco.jpg","CarlosPaz.jpg","cosquin1.jpg","cerro_la_cruz.jpg","vista-de-la-ciudad-de-villa-carlos-paz-y-lago-san-roque.jpg"],
+        "titleBanner" : "¡Tenemos lo que buscás!",
+        "about" : [
+                    {
+                    "urlImg" : "../../../../../assets/img/MEDIOS DE COMUNICACIONES AZUL.png",
+                    "title" : "Experiencia",
+                    "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
+                    },
+                    {
+                    "urlImg" : "../../../../../assets/img/certificado-AZUL.png",
+                    "title" : "Trayectoria",
+                    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
+                    },
+                    {
+                        "urlImg" : "../../../../../assets/img/PICTOGRAMA DE MANOS AZULES.png",
+                        "title" : "Respaldo",
+                        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
+                        }
+                  ]
+    }
+]

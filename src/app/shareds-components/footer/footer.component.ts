@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Inmobiliaria } from 'src/app/modules/template/models/template';
 
 @Component({
   selector: 'app-footer',
@@ -7,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  @Input() inmobiliaria : Inmobiliaria[] = []; 
+
   public pathImg:string = "./src/images/goalkeeper-F100031461.jpg";
   constructor() { }
 
   ngOnInit(): void {
+    console.log("salida desde footer.component", this.inmobiliaria);
   }
 
 }

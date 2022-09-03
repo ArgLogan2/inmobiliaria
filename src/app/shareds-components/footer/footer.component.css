@@ -1,4 +1,4 @@
-@media (max-width: 575px){
+@media (max-width: 1000px){
     .container-pre-footer{
         height: 60rem !important;
         grid-template-columns: 50% 50% !important;
@@ -32,6 +32,19 @@
     }
     
 
+}
+
+@media (max-width: 470px) {
+    #logo-footer{
+        width: 15rem;
+        height: 13rem;
+    }
+}
+
+@media(max-width:300px){
+   #text-footer{
+    font-size: 1.2rem;
+   } 
 }
 
 

@@ -21,7 +21,7 @@ export class HomePageComponent implements OnInit {
 
     setInterval(() =>{
       this.image = this.path + this.imgList[this.index];
-      /* console.log(this.image);  */
+      //console.log(this.image); 
       this.index++;
       if (this.index == this.imgList.length){this.index =0;}
     }, 5000);

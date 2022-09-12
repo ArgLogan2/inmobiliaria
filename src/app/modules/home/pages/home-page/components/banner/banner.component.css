@@ -74,3 +74,53 @@
 .btn-home:hover {
     transform: translate(-.8rem, -.8rem);
 }
+
+
+@media (min-width: 576px) and (max-width: 775px) { 
+
+    .overlay-txt{
+        font-size: 500%;
+    }
+
+}
+
+@media (max-width: 575px) { 
+
+    .overlay-txt{
+        display: none;
+    }
+
+    .overlay{
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        position: absolute;
+        margin-top: -40rem;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .btn-home { 
+        background-color: var(--color-negative);
+        color: var(--color-txt-btn);
+        padding: 2% 3%;
+        font-size: 200%;
+        border: 0px;
+        margin: 15px;
+        font-size:medium;
+        transition: transform 0.3s ease;    /*animación*/
+        animation: pulse 2s infinite;
+        width: 110px;
+    }
+
+    .card {
+        margin: 20px;
+        /*text-align: center;*/
+        border: none;
+    }
+
+    .all-cards{
+        margin: 20px;
+    }
+}

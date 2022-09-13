@@ -3,15 +3,7 @@
       <!-- con el ngStyle voy cambiando la imagen de fondo del div -->
       <div class="home-img opacity-img" [ngStyle]="{'background-image': 'url(' + image + ')'}"></div>
   </div>
-        
-<!-- <li><a routerLink="/inicio">Inicio</a></li>
-    <li><a routerLink="/ventas">Ventas</a></li>
-    <li><a routerLink="/compras">Compras</a></li>
-    <li><a routerLink="/tasaciones">Tasaciones</a></li>
-    <li><a routerLink="/subastas">Subastas</a></li>
-    <li><a routerLink="/propietario-alquila">Dueño Alquila</a></li>
-    <li><a routerLink="/inquilino-alquila">Inquilino Alquila</a></li> -->
-  <h1 class="overlay-txt">¡Tenemos lo que buscás!</h1>
+  <h1 class="overlay-txt">{{banners.titleBanner}}</h1>
   <div class="overlay">
     <div class="">
       <button name="btn1" class="btn-home " routerLink="/compras">QUIERO COMPRAR</button>

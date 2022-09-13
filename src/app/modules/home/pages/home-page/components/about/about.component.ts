@@ -8,7 +8,7 @@ import { About, Home } from 'src/app/modules/home/models/home';
 })
 export class AboutComponent implements OnInit{
   
- 
+  //inicio bindig
   @Input ()  about:About[] = [];
   constructor() {
   }

@@ -9,13 +9,13 @@ import { About, Home } from 'src/app/modules/home/models/home';
 export class AboutComponent implements OnInit{
   
   //inicio bindig
-  @Input ()  about:About[] = [];
+  @Input ()  abouts:About[] = [];
   constructor() {
   }
   
   ngOnInit(): void {
     
-    console.log("salida desde about", this.about);
+    console.log("salida desde about", this.abouts);
   }
   
 

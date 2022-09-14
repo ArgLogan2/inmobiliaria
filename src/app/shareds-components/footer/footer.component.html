@@ -2,9 +2,9 @@
 
   <div class="logo-text">
     <div class="container-hijo flex-row">
-      <img id="logo-footer" src="../assets/img/Monograma fl vertical - bnRecurso 2.png" alt="logo" class="d-inline-block align-text-top footer-logo m-4"/>
+      <img id="logo-footer" [src]="inmobiliaria[0].logo[1]" alt="logo" class="d-inline-block align-text-top footer-logo m-4"/>
       <br>
-      <p id="text-footer" class="info-sub">Aqui iría un binding con una breve descripción de la empresa en cuestión, bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bl...</p>
+      <p id="text-footer" class="info-sub">Aqui iría un binding con una breve descripción de la empresa en cuestión, bla bla bla bla bla bla bla bla bla bla  bla bla bla bla bla bla bla bl...</p>
     </div>
   </div>
 
@@ -21,7 +21,7 @@
     <div class=" container-hijo info-title accent-color">
         <i class="far fa-envelope"></i>
         <p class="info-title">Email</p>
-      <p class="info-sub">Colocar binding aquí</p>  
+      <p class="info-sub">{{inmobiliaria[0].email}}</p>  
     </div>
   </div>
 
@@ -29,7 +29,7 @@
     <div class="container-hijo info-title accent-color">
         <i class="fas fa-phone-alt"></i>
         <p class="info-title">CONTACTO DIRECTO</p>
-        <p class="info-sub">Colocar binding aquí</p>  
+        <p class="info-sub">{{inmobiliaria[0].phone}}</p>  
   </div>
 </div>
 
@@ -37,9 +37,9 @@
     <div class="container-hijo info-title accent-color">
         <i class="far fa-clock"></i>
         <p class="info-title">Horarios de atención telefónica</p>
-        <p class="info-sub">Colocar binding aquí</p>  
+        <p class="info-sub">{{inmobiliaria[0].contactTime}}</p>  
     </div>
 </div>
 
 </div>
-<app-footer2></app-footer2>
+<app-footer2 [urlLogo]="inmobiliaria[0].logo[2]"></app-footer2>

@@ -9,10 +9,11 @@ import { Inmobiliaria } from 'src/app/modules/template/models/template';
 })
 export class HeaderComponent implements OnInit {
   
-  @Input() inmobiliaria : Inmobiliaria[] = []; 
+  @Input() inmobiliaria : Inmobiliaria[] = [];
   constructor() {}
 
   ngOnInit(): void {
+    
     console.log("salida desde header.component", this.inmobiliaria);
   }
 

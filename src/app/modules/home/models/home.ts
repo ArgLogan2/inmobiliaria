@@ -15,7 +15,7 @@ export interface Banner {
 export interface About {
     urlImg : string
     title : string,
-    description: string,
+    description: string
 }
 
 

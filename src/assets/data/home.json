@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "urlImgBanner" : ["LaFalda.jpg","VillaGiardino2.jpg","VillaGiardino1.jpg","LaFalda2.jpg","LaCumbre.jpg","LosCocos.jpg","CapillaDelMonte.jpg","CerroUritorco.jpg","CarlosPaz.jpg","cosquin1.jpg","cerro_la_cruz.jpg","vista-de-la-ciudad-de-villa-carlos-paz-y-lago-san-roque.jpg"],
+        "urlImgBanner" : ["../../../../../assets/img/LaFalda.jpg","../../../../../assets/img/VillaGiardino2.jpg","../../../../../assets/img/VillaGiardino1.jpg","../../../../../assets/img/LaFalda2.jpg","../../../../../assets/img/LaCumbre.jpg","../../../../../assets/img/LosCocos.jpg","../../../../../assets/img/CapillaDelMonte.jpg","../../../../../assets/img/CerroUritorco.jpg","../../../../../assets/img/CarlosPaz.jpg","../../../../../assets/img/cosquin1.jpg","../../../../../assets/img/cerro_la_cruz.jpg","../../../../../assets/img/vista-de-la-ciudad-de-villa-carlos-paz-y-lago-san-roque.jpg"],
         "titleBanner" : "¡Tenemos lo que buscás!",
         "about" : [
                     {
@@ -18,7 +18,7 @@
                         "urlImg" : "../../../../../assets/img/PICTOGRAMA DE MANOS AZULES.png",
                         "title" : "Respaldo",
                         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
-                        }
+                    }
                   ]
     }
 ]

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-footer2',
@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Footer2Component implements OnInit {
 
+  @Input() urlLogo : string = ""; 
+  
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }

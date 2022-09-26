@@ -31,8 +31,8 @@ export class HomePageComponent implements OnInit {
 
 // Así se cargan los datos luego de la inyección del servicio, falta hacer los bindings
   
-  about:About[] = [];
-  banner:Banner = {titleBanner: '', urlImgBanner: []} 
+  abouts:About[] = [];
+  banners:Banner = {titleBanner: '', urlImgBanner: []} 
   constructor(private homeService:DataLoadHomeService) {}
   
   ngOnInit(): void {
@@ -42,9 +42,9 @@ export class HomePageComponent implements OnInit {
   getHome(){
     this.homeService.getHome()
     .subscribe((home:Home[]) => {
-      this.banner.titleBanner = home[0].titleBanner;
-      this.banner.urlImgBanner = home[0].urlImgBanner;
-      home[0].about.forEach(about => this.about.push(about))
+      this.banners.titleBanner = home[0].titleBanner;
+      this.banners.urlImgBanner = home[0].urlImgBanner;
+      home[0].about.forEach(about => this.abouts.push(about))
       console.log("salida desde home page", home);
     })
   }

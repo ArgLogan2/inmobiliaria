@@ -4,8 +4,8 @@ import { HttpClient } from '@angular/common/http';
 /*importo la variable de entorno de desarrollo, allí se encuentra la ruta del json que contiene la data de la página home*/ 
 import { environment } from 'src/environments/environment';
 import { map } from 'rxjs';
-import { Home } from './models/home';
 import { Observable } from 'rxjs';
+import { Home } from './models/home';
 
 @Injectable({
   providedIn: 'root' 

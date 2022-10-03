@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "title": "Departamento en venta 3 dormitorios, Nueva Córdoba con terraza y asador propio",
+        "propertyImg": [
+            {
+                "id": 1,
+                "urlImg": "url-img_1",
+                "title": "Url img 1"
+            }
+        ],
+        "Price": 140.000,
+        "propertyInformation": [
+            {
+                "id": 1,
+                "content": "m² Terreno",
+                "icon": "fas fa-border-none"
+            },
+            {
+                "id": 2,
+                "content": "135 m² Cubierta",
+                "icon": "fab fa-microsoft"
+            },
+            {
+                "id": 3,
+                "content": "4 Ambientes",
+                "icon": "fas fa-door-open"
+            },
+            {
+                "id": 3,
+                "content": "2 Baños",
+                "icon": "fas fa-bath"
+            }
+        ],
+        "owner" : "Omar Vilte",
+        "location" : "Nueva Córdoba",
+        "typeProperty" : "Departamento",
+        "propertySituation" : "venta"
+    }
+]
